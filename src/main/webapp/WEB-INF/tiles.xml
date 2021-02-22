@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+<tiles-definitions>  
+    <definition name="base.definition"  
+        template="/WEB-INF/views/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/views/header.jsp" />  
+        <put-attribute name="menu" value="/WEB-INF/views/menu.jsp" />   
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />  
+    </definition>  
+    
+   <definition name="viewemp" extends="base.definition">  
+        <put-attribute name="title" value="view" />  
+        <put-attribute name="body" value="/WEB-INF/views/viewemp.jsp" />  
+    </definition>  
+    <definition name="viewempa" extends="base.definition">  
+        <put-attribute name="title" value="viewa" />  
+        <put-attribute name="body" value="/WEB-INF/views/viewempa.jsp" />  
+    </definition>  
+    <definition name="empform" extends="base.definition">  
+        <put-attribute name="title" value="form" />  
+        <put-attribute name="body" value="/WEB-INF/views/empform.jsp" />  
+    </definition>  
+     <definition name="details" extends="base.definition">  
+        <put-attribute name="title" value="detail" />  
+        <put-attribute name="body" value="/WEB-INF/views/details.jsp" />  
+    </definition>  
+     <definition name="admin" extends="base.definition">  
+        <put-attribute name="title" value="ad" />  
+        <put-attribute name="body" value="/WEB-INF/views/admin.jsp" />  
+    </definition>  
+     <definition name="user" extends="base.definition">  
+        <put-attribute name="title" value="us" />  
+        <put-attribute name="body" value="/WEB-INF/views/user.jsp" />  
+    </definition>  
+    
+      <definition name="editemp/{id}" extends="base.definition">  
+        <put-attribute name="title" value="edit" />  
+        <put-attribute name="body" value="/WEB-INF/views/empeditform.jsp" />  
+    </definition>  
+    <definition name="adminlogin" extends="base.definition">  
+        <put-attribute name="title" value="login" />  
+        <put-attribute name="body" value="/WEB-INF/views/adminlogin.jsp" />  
+    </definition>
+    <definition name="userlogin" extends="base.definition">  
+        <put-attribute name="title" value="ulogin" />  
+        <put-attribute name="body" value="/WEB-INF/views/userlogin.jsp" />  
+    </definition>
+    
+     
+    
+</tiles-definitions> 
